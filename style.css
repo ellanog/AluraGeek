@@ -1,0 +1,251 @@
+/* Configurações globais */
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Estilo do Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #6c3fa0;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Estilo da Seção Meus Produtos */
+.meus-produtos {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem 2rem;
+    border-radius: 8px;
+}
+
+.meus-produtos h1 {
+    text-align: center;
+    color: #6c3fa0;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Estilo dos Cards */
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.card-container--info p {
+    margin: 0.5rem 0;
+}
+
+.card-container--value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo da Seção Adicionar Produto */
+.adicionar-produto {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem 2rem;
+    border-radius: 8px;
+}
+
+.adicionar-produto h1 {
+    text-align: center;
+    color: #6c3fa0;
+}
+
+.adicionar-produto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.adicionar-produto input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.adicionar-produto .button-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.adicionar-produto button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #6c3fa0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.adicionar-produto button:hover {
+    background-color: #563188;
+}
+
+/* Estilo do Footer */
+footer {
+    background-color: #6c3fa0;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-logo span {
+    font-size: 1.5rem;
+}
+
+.footer-logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #fff;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .meus-produtos,
+    .adicionar-produto {
+        padding: 1rem;
+    }
+
+    .produtos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .adicionar-produto form {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .adicionar-produto .button-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+    }
+
+    .footer-content {
+        gap: 0.5rem;
+    }
+}
+/* Adicionar ao final do CSS */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 16px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.card__imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.card-container--info {
+    font-size: 14px;
+}
+
+.card__nome {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.card__preco {
+    color: #4caf50;
+    font-size: 16px;
+    font-weight: bold;
+}
+
